@@ -126,7 +126,7 @@ import Torchburn from './treasure/torchburn'
 import Walltorch from './treasure/walltorch'
 
 import Web3 from 'web3'
-import DungeonToken from '../blockchain/build/contracts/DungeonToken.json'
+import DungeonToken from '../blockchain/src/abis/DungeonToken.json'
 
 
 
@@ -1391,7 +1391,7 @@ let contract
 const loadBlockchainData = () => {
     const web3 = window.web3
     const networkId = web3.eth.net.getId()
-    const networkData = DungeonToken.networks[1313161555]
+    const networkData = DungeonToken.networks[4]
 
     if (networkData) {
         const abi = []
