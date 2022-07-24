@@ -65,7 +65,7 @@ class App extends Component {
 
       this.setState({ usersNftCount: Number(usersNftCount.toString()) })
 
-      console.log(usersNftCount.toString());
+      // console.log(usersNftCount.toString());
 
       for (var i = 1; i <= this.state.usersNftCount; i++) {
         const trophy = await contract.methods.usersNft(this.state.account, i).call()
@@ -127,14 +127,7 @@ class App extends Component {
             <main role='main' className='col-lg-12 d-flex text-center'>
               <div className="trophy-section-header">
                 <h5 className="trophy-title"><span>  </span>Your Trophy Cabinet <span> </span></h5>
-                {/* <h5 className="text col-md-6 col-sm">Your Trophy Cabinet</h5> </div> */}
-                {
-                  // this.state.loading ? (
-                  // <Spinner className='spinner' color="info" />
-                  // <Spinner color="info" />
-                  // ):
-                }
-
+                <h6 className="text-header1 white">Powered by <img src={ChainlinkLogo} className='chainlink' /> <a className="hovero" href="https://docs.chain.link/docs/chainlink-vrf"><span className="hovero">Chainlink VRF</span></a>  </h6>
               </div>
             </main>
           </div>
@@ -153,8 +146,8 @@ class App extends Component {
 
               const nftMint = ["https://ipfs.io/ipfs/QmPbBTESpMSsGjKisM73deE3PLqA76s2zh1nHhvAkAfYf4?filename=btc.png", "https://ipfs.io/ipfs/Qmb3jBv3xdDettAQokTxQc5T4G1buxY9oxRiSA9YepeRrP?filename=crystal.png", "https://ipfs.io/ipfs/QmZg13ohhyY9xBYnhF1XbAm8qjW43SjxDXsXTyTGFkezWX?filename=chest.png", "https://ipfs.io/ipfs/QmNyZd4czMAY8rxYjGK6b8SR69m2W9FHbkVsnCJstewkXY?filename=god.png", "https://ipfs.io/ipfs/QmXHYB8eEpEQjZq6Hc9vCHdPGwpHPjZfoRYQNwqNZVsKQ8?filename=diamond.png"]
               const random = Math.floor(Math.random() * nftMint.length);
-              console.log(random, nftMint[random]);
-              console.log(levelPass, name, tokenId, rarity, worth);
+              // console.log(random, nftMint[random]);
+              // console.log(levelPass, name, tokenId, rarity, worth);
               return (
                 <div key={key} className='gift'>
                   <div className="giftBox">

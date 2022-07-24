@@ -24,8 +24,10 @@ body::-webkit-scrollbar {
 }
 
 .pgraph {
-    margin: 0px 120px 70px 120px;
-    align-content: center;
+    margin-left: 400px;
+    margin-right: -120px;
+    align-content: center !important;
+    align-items: center !important;
     color: #ffffff;
     font-weight: 200;
     font-size: medium;
@@ -165,6 +167,12 @@ border-radius: 24px;
 }
 .values {
     color: gold;
+}
+
+.chainlink1 {
+    height: 100px;
+    width: 100px;
+    margin: 20px
 }
 
 .chainlink {

@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+// import "./index.css"
 import logoImg2 from './assets/dungenTileset.png';
 import dungenMap from './assets/dungen-01.json';
 import tilesetterain from './assets/tropical.png'
@@ -1436,7 +1437,7 @@ const config = {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH,
       },
-      backgroundColor: "#000000",
+    backgroundColor: "#000000",
 };
 
 const game = new Phaser.Game(config);

@@ -27,8 +27,8 @@ export default function Routes () {
                     <Route path="/HeroUpload" exact component={Upload} />
                     <Route path="/StoryUpload" exact component={Upload} />
                     <Route path="/Login" exact component={Login} />
-                    <Route path="/HeroBooth" exact component={HeroBooth} />
-                    <Route path="/StoryBooth" exact component={StoryBooth} />
+                    <Route path="/feed" exact component={HeroBooth} />
+                    <Route path="/Dashboard" exact component={StoryBooth} />
                     <Route path="/App" exact component={App} />
 
                 </Switch>
