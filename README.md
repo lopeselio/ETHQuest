@@ -34,6 +34,12 @@ Upon collecting the NFT, the user is minted NFTs with Random attributes, powered
 # Architecture
 <img width="1418" alt="image" src="https://user-images.githubusercontent.com/43913734/180652442-bb2a8c6a-39c6-49d4-8391-982b1fe1944c.png">
 
+# Smart Contract & web3
+1. `TrophyChar.sol` - Chainlink VRF
+2. `DungeonToken.sol` - $DGN reward token
+3. `Creator.sol` - ETHQuest Creator Space
+4. `NFT Storage` [Implemetation](https://github.com/lopeselio/hackfs22-ETHQuest/blob/master/blockchain/src/components/main.js#L110)
+5. `Covalent` [API Call](https://github.com/lopeselio/hackfs22-ETHQuest/blob/master/blockchain/src/components/covalent.js#L5)
 
 # Plans for the future
 - Token gated chat using Covalent APIs and Lit protocol, and XMTP network to alert users of new collections, airdrops, and updates for certain NFT holders.
