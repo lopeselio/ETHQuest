@@ -47,6 +47,8 @@ Upon collecting the NFT, the user is minted NFTs with Random attributes, powered
 - To index NFT data on the game dashboard and provide powerful on-chain insights using Covalent.
 
 # Tools and Tech Stack
+<img width="1003" alt="image" src="https://user-images.githubusercontent.com/43913734/180653868-790be821-a151-45a8-90ab-208cc1f5b813.png">
+
 - The game is built on Phaser.
 - The app is built in React
 - We deploy our contracts to Ethereum Rinkeby and Polygon Mumbai TestNet.
@@ -62,12 +64,17 @@ Contract Addresses:
 
 # GamePlay Screenshots
 <img width="1920" alt="image" src="https://user-images.githubusercontent.com/43913734/180652527-c90dd800-e063-46e4-b09b-9fd5fe5abfd2.png">
+<img width="1646" alt="Screenshot 2022-07-24 at 8 33 31 PM" src="https://user-images.githubusercontent.com/43913734/180653797-faf3afe1-9c07-4bb0-b56b-bfa4034257a5.png">
+<img width="1401" alt="Screenshot 2022-07-24 at 8 31 48 PM" src="https://user-images.githubusercontent.com/43913734/180653807-df8c3b19-0ce1-4eb9-bb15-32533b70f200.png">
 
 # Creator's Feed
+<img width="965" alt="Screenshot 2022-07-24 at 8 27 32 PM" src="https://user-images.githubusercontent.com/43913734/180653746-80e68c0b-dfea-4138-a658-937787d3ab71.png">
 
 # Trophy Cabinet 
+<img width="1920" alt="Screenshot 2022-07-24 at 8 29 48 PM" src="https://user-images.githubusercontent.com/43913734/180653754-398a634a-e703-4416-984c-cd9611673831.png">
 
 # User Dashboard
+![image](https://user-images.githubusercontent.com/43913734/180653777-49574275-55d7-41c3-9224-eb15b9801449.png)
 
 
 
