@@ -16,6 +16,7 @@
 
 
 ETHQuest is an RPG NFT dungeon game, built on **Ethereum & Polygon** built on Phaser Game Engine, and powered by **ChainlinkVRF, NFT.Storage, IPFS & Filecoin, Covalent APIs.**
+<img width="1003" alt="image" src="https://user-images.githubusercontent.com/43913734/180653868-790be821-a151-45a8-90ab-208cc1f5b813.png">
 
 - The game's main aim is to level up by collecting as many loot boxes (chests), in ERC-20 $DGN tokens, as a reward, by killing all the demons and monsters guarding the chests.
 
@@ -52,7 +53,7 @@ Upon collecting the NFT, the user is minted NFTs with Random attributes, powered
 - To index NFT data on the game dashboard and provide powerful on-chain insights using Covalent.
 
 # Tools and Tech Stack
-<img width="1003" alt="image" src="https://user-images.githubusercontent.com/43913734/180653868-790be821-a151-45a8-90ab-208cc1f5b813.png">
+
 
 - The game is built on Phaser.
 - The app is built in React
