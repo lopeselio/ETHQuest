@@ -2,9 +2,13 @@
 <h1 align="center">ETHQuest</h1>
 
 <p align="center">
-    
+   <a href="/">
+    <img src="./logo.png" alt="Logo" width="480" height="480">
+  </a> 
 
   <h6>Built at ETHGlobal HackFS'22</h6>
+  <img width="341" alt="image" src="https://user-images.githubusercontent.com/43913734/180653686-39ca4bc6-21a9-44a6-b499-5a7599075bc9.png">
+
   </p>
 
   <p>View the project demo on <a href="https://youtu.be/WIJR5L7eOD8">YouTube</a></p>
