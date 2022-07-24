@@ -1,4 +1,4 @@
-import LGBTQ from "./abis/LGBTQ.json";
+import Creator from "../abis/Creator.json";
 import React, { Component } from "react";
 import NavbarComp from "./NavbarComp";
 import Header from './HeroHeader'
@@ -20,7 +20,7 @@ class App extends Component {
     super(props);
     this.state = {
       account: "",
-      lgbtq: null,
+      creator : null,
       images: [],
       loading: true,
       selectedImg: null,
@@ -60,17 +60,17 @@ class App extends Component {
     const web3 = new Web3(window.ethereum);
     kit = ContractKit.newKitFromWeb3(web3);
     const networkId = await kit.web3.eth.net.getId();
-    const networkData = LGBTQ.networks[networkId];
+    const networkData = Creator.networks[networkId];
     if (networkData) {
-      const lgbtq = new kit.web3.eth.Contract(
-        LGBTQ.abi,
+      const creator = new kit.web3.eth.Contract(
+        Creator.abi,
         networkData.address
       );
-      this.setState({ lgbtq });
-      const imagesCount = await lgbtq.methods.imageCount().call();
+      this.setState({ creator });
+      const imagesCount = await creator.methods.imageCount().call();
       this.setState({ imagesCount });
       for (var i = 1; i <= imagesCount; i++) {
-        const image = await lgbtq.methods.images(i).call();
+        const image = await creator.methods.images(i).call();
         this.setState({
           images: [...this.state.images, image],
         });
@@ -117,7 +117,7 @@ class App extends Component {
           return;
         }
         this.setState({ loading: true });
-        this.state.lgbtq.methods
+        this.state.creator.methods
           .uploadImage(result[0].hash, description)
           .send({ from: this.state.account })
           .on("transactionHash", (hash) => {
@@ -135,7 +135,7 @@ class App extends Component {
   tipImageOwner = (id, tipAmount) => {
     if (this.state.account !== "") {
       this.setState({ loading: true });
-      this.state.lgbtq.methods
+      this.state.creator.methods
         .tipImageOwner(id)
         .send({ from: this.state.account, value: tipAmount })
         .on("transactionHash", (hash) => {
