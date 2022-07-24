@@ -1,13 +1,13 @@
-import Creator from "./abis/Creator.json";
+import Creator from "../abis/Creator.json";
 import React, { Component } from "react";
 import { NFTStorage, File } from 'nft.storage'
 import NavbarComp from "./NavbarComp";
 const NFT_KEY = process.env.API_KEY
 const Web3 = require("web3");
-const ContractKit = require("@celo/contractkit");
-let kit;
-
-class App extends Component {
+let img
+let imgName
+let imgType
+class HeroBooth extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,8 +37,7 @@ class App extends Component {
       try {
         await window.ethereum.enable();
         const web3 = new Web3(window.ethereum);
-        kit = ContractKit.newKitFromWeb3(web3);
-        const accounts = await kit.web3.eth.getAccounts();
+        const accounts = await web3.eth.getAccounts();
         this.setState({ account: accounts[0] });
       } catch (error) {
         console.log(`${error}.`);
@@ -53,11 +52,10 @@ class App extends Component {
 
   async loadBlockchainData() {
     const web3 = new Web3(window.ethereum);
-    kit = ContractKit.newKitFromWeb3(web3);
-    const networkId = await kit.web3.eth.net.getId();
+    const networkId = await web3.eth.net.getId();
     const networkData = Creator.networks[networkId];
     if (networkData) {
-      const creator = new kit.web3.eth.Contract(
+      const creator = new web3.eth.Contract(
         Creator.abi,
         networkData.address
       );
@@ -168,4 +166,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default HeroBooth;
