@@ -11,10 +11,9 @@
 
   </p>
 
-  <p>View the project demo on <a href="https://youtu.be/WIJR5L7eOD8">YouTube</a></p>
+  <p>View the project demo on <a href="https://youtu.be/lUCj6xQJxkk">YouTube</a></p>
 </p>
 
-[Youtube Demo Here](https://youtu.be/lUCj6xQJxkk)
 
 ETHQuest is an RPG NFT dungeon game, built on **Ethereum & Polygon** built on Phaser Game Engine, and powered by **ChainlinkVRF, NFT.Storage, IPFS & Filecoin, Covalent APIs.**
 
