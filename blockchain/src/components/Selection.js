@@ -2,22 +2,30 @@ import React from "react";
 import "../styles/App.css";
 import history from "../history";
 import Carousel from "./Carousel";
+import Chainlink from "../assets/chainlink.png"
+import Ethereum from "../assets/ethereum.png"
+import IPFS from "../assets/ipfs.png"
+import Filecoin from "../assets/filecoin.png"
+import Covalent from "../assets/covalent.png"
+import Polygon from "../assets/polygon.png"
+import NFTStorage from "../assets/NFTStorage.png"
+
+
+
 
 export default function App() {
+
   return (
     <div className="main screen">
       <Carousel/>
       <div className="carousel-padding header"><span className="polygon">ETHQuest</span></div>
-      <p className="pgraph">An RPG dungeon game wherein the player has to enconter and fight monsters who are guarding chests, and gain loot in ERC-20 DGN (in-game) token (Dungeon Token). <br/><br/>
-
-The player has to finally unlock the locked gates by seeking the keys to the token-gate who is locked inside a wall in the dungeon and ultimately defeat the the evil angel who possesses the ultimate key to the ETHEREUM NFT.<br/> <br/>
-Once the user collect the ETHEREUM NFT collectible, an NFT is minted to your NFT-Trophy Gallery. These NFTs are verifiably provable and powered by random number generators, which gives them random attributes on-chain.</p>
+      <p className="pgraph"><img src={Chainlink} className='chainlink1' /><img src={Ethereum} className='chainlink1' /><img src={IPFS} className='chainlink1' /><img src={Filecoin} className='chainlink1' /><img src={Covalent} className='chainlink1' /><img src={Polygon} className='chainlink1' /><img src={Chainlink} className='chainlink1' /><img src={NFTStorage} className='chainlink1' /></p>
       <div className="selection">
         
         <div
           className="select-story"
           onClick={() => {
-            history.push("/HeroBooth");
+            history.push("/feed");
             history.go(0);
           }}
         >
@@ -25,17 +33,17 @@ Once the user collect the ETHEREUM NFT collectible, an NFT is minted to your NFT
           <img className="dashboard-card-image" src="https://ipfs.io/ipfs/Qme7QyNBX1Q997Fp1bin8JK9KCpk5hyauae35Aosfp2VxV?filename=Angel.png" 
           alt="Angel"  />
         </div>
-        {/* <div
+        <div
           className="select-story"
           onClick={() => {
-            history.push("/StoryBooth");
+            history.push("/Dashboard");
             history.go(0);
           }}
         >
-          <h4 className="text-header">Vote for Story</h4>
+          <h4 className="text-header">View Game Analytics</h4>
           <img className="dashboard-card-image" src="https://ipfs.io/ipfs/QmemTF7ziTVBFFpZzqYvSF3hdK5q6J2bZ85FYUr4mG2CUw?filename=Castle.png" 
           alt="Castel"  />
-        </div> */}
+        </div>
         <div
           className="select-story"
           onClick={() => {

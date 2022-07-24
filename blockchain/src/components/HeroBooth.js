@@ -1,5 +1,7 @@
 import Creator from "../abis/Creator.json";
+import axios from 'axios';
 import React, { Component } from "react";
+import { fetchTransactions } from './covalent';
 import NavbarComp from "./NavbarComp";
 import Header from './HeroHeader'
 import '../styles/booth.css'
@@ -25,6 +27,7 @@ class App extends Component {
       loading: true,
       selectedImg: null,
       openModal: false,
+      txs: null
     };
 
     this.uploadImage = this.uploadImage.bind(this);
@@ -35,7 +38,25 @@ class App extends Component {
   async componentWillMount() {
     this.connectCeloWallet();
     this.loadBlockchainData();
+    this.fetchTxs();
   }
+
+  
+
+  // async fetchTransactions () {
+  //   const res = await axios.get(
+  //     `https://api.covalenthq.com/v1/80001/address/0xbE8Ace29e3022CD6841821315F82a6C2484fE585/transfers_v2/?quote-currency=USD&format=JSON&contract-address=0x7265Af707A9022e048Dc6E86e4Ed36c4537e5836&page-size=4&key=ckey_7d38d237e4e3411ba7e6d388843`
+  //   );
+      
+  //   return res.data.data.items;
+  // }
+
+  async fetchTxs () {
+    const txs = await fetchTransactions();
+    console.log(txs);
+  };
+
+
 
   async connectCeloWallet() {
     if (window.ethereum) {

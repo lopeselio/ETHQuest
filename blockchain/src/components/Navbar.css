@@ -37,6 +37,18 @@ body{
   line-height: 40px;
 }
 
+.yellow {
+    color: rgb(216, 156, 4);
+}
+
+.Covalent {
+    color: rgb(249, 96, 96)
+}
+
+.api {
+    color: rgb(0, 252, 155)
+}
+
 .forum {
     margin-top: 40px;
     margin-left: auto !important;
@@ -45,6 +57,54 @@ body{
     
 }
 
+.centerAlign {
+    align-content: center !important;
+    align-content: center !important;
+    margin-left: 50px !important;
+    /* margin-right: auto !important; */
+}
+.width1 {
+    align-items: center !important;
+    align-content: center !important;
+    width: 1400px !important;
+    height: 1000px !important;
+    overflow: auto;
+    margin: auto !important;
+}
+
+.circular-bg {
+    background: #222831;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 50%;
+    color: azure;
+}
+
+.date-time {
+    background: #222831;
+    padding: 30px;
+    font-size: medium;
+    font-weight: 400;
+    color: azure
+}
+
+.right-align2 {
+    margin: 5px 700px;
+    width: fit-content !important;
+}
+
+.right-align1 {
+    margin: 5px 50px;
+    width: fit-content !important;
+}
+
+.boxes {
+    padding: 80px;
+    background: #282e38;
+    border-radius: 10cm;
+    margin: 20px;
+}
 .heading {
     color: aliceblue;
 }

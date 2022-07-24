@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Navbar.css'
+import Header from "./CreatorHeader";
 
 class UploadImage extends Component {
   state = {
@@ -20,6 +21,7 @@ class UploadImage extends Component {
     const { Img } = this.state;
     return (
       <div className="container-fluid mt-5">
+        <Header />
         <div className="row">
           <main role="main" className="col-lg-12 ml-auto mr-auto">
             <div className="content mr-auto ml-auto">

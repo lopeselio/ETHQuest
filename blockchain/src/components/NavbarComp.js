@@ -3,6 +3,8 @@ import { Navbar, Nav } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ShowImage from "./ShowImage";
 import UploadImage from "./UploadImage";
+
+
 import Profile from "./Forum"
 import Modal from "./Modal";
 import './Navbar.css'
@@ -52,6 +54,8 @@ export default class NavbarComp extends Component {
           </ul>
           </Navbar>
         </div>
+            
+        
 
         <div>
           <Switch>

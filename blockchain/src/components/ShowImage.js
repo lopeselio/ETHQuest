@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { motion } from "framer-motion";
 import Identicon from "react-jdenticon";
 import './Navbar.css'
+import Header from "./CreatorHeader";
 
 const web3 = require("web3");
 
@@ -18,6 +19,7 @@ class ShowImage extends Component {
     const { tip } = this.state;
     return (
       <div className="container-fluid mt-5">
+        <Header />
         <div className="row">
           <main role="main" className="col-lg-12 ml-auto mr-auto">
             <div className="content mr-auto ml-auto">
@@ -82,13 +84,13 @@ class ShowImage extends Component {
                             <p>{image.description}</p>
                           </li>
                           <li key={key} className="list-group-item py-2">
-                            <small className="float-left mt-1 text-muted">
+                            <small className="float-left mt-1">
                               &nbsp;&nbsp;
                               {web3.utils.fromWei(
                                 image.tipAmount.toString(),
                                 "Ether"
                               )}{" "}
-                              CELO
+                              ETH
                             </small>
                             <br></br>
                             <div style={{ display: "flex" }}>
