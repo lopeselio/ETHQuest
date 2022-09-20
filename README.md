@@ -6,8 +6,10 @@
     <img src="./logo.png" alt="Logo" width="480" height="480">
   </a> 
 
-  <h6>Built at ETHGlobal HackFS'22</h6>
+  <h6>Built at ETHGlobal HackFS'22 and Web3athon</h6>
   <img width="341" alt="image" src="https://user-images.githubusercontent.com/43913734/180653686-39ca4bc6-21a9-44a6-b499-5a7599075bc9.png">
+<img width="757" alt="Screenshot 2022-09-20 at 9 42 02 PM" src="https://user-images.githubusercontent.com/43913734/191310239-657257b5-b4ab-4dc1-9306-25e6abf96bf7.png">
+
 
   </p>
 
